@@ -2,11 +2,11 @@ const Sales = require('./Sales.js');
 
 const lessGo = new Sales();
 
-lessGo.itraukiamISarasa('Toilet Bowl Night Light', 5, 1);
-lessGo.itraukiamISarasa('Sensory Fidget Toys Set', 5, 1);
-lessGo.itraukiamISarasa('The Official BS Button', 5, 1);
-lessGo.itraukiamISarasa('Glowing Ceiling Balls', 5, 1);
-lessGo.itraukiamISarasa('Jorbest Burritos Blanket', 7, 2);
+lessGo.itraukiamISarasa('Toilet Bowl Night Light', 5, 1, 2);
+lessGo.itraukiamISarasa('Sensory Fidget Toys Set', 5, 1, 2);
+lessGo.itraukiamISarasa('The Official BS Button', 5, 1, 2);
+lessGo.itraukiamISarasa('Glowing Ceiling Balls', 5, 1, 2);
+lessGo.itraukiamISarasa('Jorbest Burritos Blanket', 7, 2, 4);
 
 lessGo.rodykKaTuri();
 /*
@@ -21,7 +21,12 @@ lessGo.kiekIsleidau();
 //Is viso isleista: 34.00 eu.
 
 
-lessGo.kiekUzdirbau();
+lessGo.pardavimas('Glowing Ceiling Balls', 3);
+lessGo.pardavimas('The Official BS Button', 2);
+lessGo.pardavimas('Jorbest Burritos Blanket', 5);
 
+
+lessGo.kiekUzdirbau();
+//Is viso uzdirbta: 30 eu.
 
 lessGo.vidutinisPrekiuAntkainis();
